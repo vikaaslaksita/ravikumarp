@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  /* background-image: url('/static/image/main.jpg'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.logo{
+  margin-left: 20px;
+  float: left;
+  width: 250px;
+  height: 70px;
+}
+
+.logo img{
+  width: 100%;
+ margin-top: -90px;
+}
+
+nav{
+  height: 70px;
+}
+nav ul{
+  text-align: center;
+  float: right;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 10px;
+  line-height: 70px;
+  font-size: 20px;
+  transition: .5s;
+}
+nav ul li a:hover,
+button:hover,
+nav ul li a.active,
+.sign a:hover{
+  
+  font-weight:bolder;
+  font-style: italic;
+  color: black;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  background-color:#6057e9;
+  /* border: 1px solid #171a1b; */
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 40px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  width: 200px;
+  position: relative;
+  top: -70px;
+  left: 150px;
+  font-weight: bolder;
+}
+nav ul ul li a {
+  font-size: 15px;
+  border: 1px solid #171a1b;
+}
+.sign{
+  /* background-color: #171a1b; */
+  width: 150px;
+  height: 45px;
+  float: right;
+  margin-top: 10px;
+  color: white;
+  border-radius: 20px;
+  padding:  0 20px;
+  line-height: 45px;
+  font-size: 20px;
+  border-style:double ;
+  border: 4px white double ;
+  transition: .5s;
+  margin-right: 30px;
+  margin-left: 100px; 
+}
+.sign a{
+  color: white;
+}
+
+.content{
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
+  width: 50%;
+  /* background-color: black; */
+
+}
+
+.content h1{
+  font-size: 85px;
+}
+.content h2{
+  font-weight: lighter;
+  font-size:35px ;
+}
+
+.content button{
+  background-image: linear-gradient(to left, rgb(247, 11, 207) , rgb(8, 132, 248));
+  color: white;
+  padding:20px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size:large;
+  font-weight: bolder;
+  box-shadow:4px 10px 10px black;
+}
+
+/* .whatsapp{
+  bottom: 10px;
+  left: 10px;
+} */
+ 

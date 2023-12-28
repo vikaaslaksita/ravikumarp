@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    {% load static %}
+    
+   <head>
+      <meta charset="utf-8">
+      <title>Apteck Learning</title>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+      <style>
+        body{
+            background-color: #042eff;
+        }
+        .modal{
+            display: none;  
+        }
+        .whatsapp{
+            position: fixed;
+        }
+        .interview{
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            background-image: linear-gradient(to left, rgb(247, 11, 207) , rgb(8, 132, 248));
+            color: white;
+            padding:10px 50px;
+            border-radius: 20px;
+            font-size:large;
+            box-shadow:4px 10px 10px black;
+        }
+        .vacancy{
+            background-color: #0e81f7;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            padding:10px 50px;
+            border-radius: 20px;
+            color: white;
+            box-shadow:4px 10px 10px black;
+        }
+      </style>
+    </head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="interview">
+        <marquee behavior="" direction=""><h1>Current Job Openings with Us.</h1></marquee>
+    </div> 
+    <div class="vacancy">
+        <p><b>Job Title:</b>{{job_title}}</p>
+
+    
+
+    </div>
+    
+    
+        
+    <a class="whatsapp" href="https://wa.me/+917022928198?text=" target="_blank"> <img src="{% static 'image/whatsapp.png'%}" alt="" height="60px" ></a>
+</body>
+</html>

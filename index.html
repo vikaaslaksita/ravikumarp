@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    {% load static %}
+    
+   <head>
+      <meta charset="utf-8">
+      <title>Apteck Learning</title>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/float.css' %}">
+      <style>
+        body{
+            background-image: url('/static/image/main.jpg');
+        }
+      </style>
+    </head>
+<body>
+    <nav>
+        <section class="logo"><img src="{% static 'image/logo.png'%}"  alt="" ></section>
+        
+        
+        <ul>
+            <li><a href="#">Courses</span></a>
+                <ul>
+                    <li><a href="#">IT Courses </a>
+                        <ul>
+                            <li>
+                                <a href="#">Full Stack Java</a>
+                                <a href="#">Full Stack Python</a>
+                                <a href="#">Full Stack Web </a>
+                                <a href="">Software Testing</a>
+                            </li>  
+                        </ul>
+                    </li>
+                    <li><a href="#">Non-IT Course </a>
+                        <ul>
+                            <li>
+                                <a href="#">Digital Marketing</a>
+                                <a href="#">Tally + GST</a>
+                                <a href="#">Advanced MS Office Suite</a>
+                            </li>  
+                        </ul>
+                    </li>
+                    <li><a href="#">Complementary</a>
+                        <ul>
+                            <li>
+                                <a href="#">Softskills & Aptitude</a>
+                                <a href="#">English Communication</a>
+                                <a href="#">Interview Preparation</a>
+                            </li>  
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Internship</a></li>
+            <li><a href="#">Companies</a>
+                <ul>
+                    <li><a href="#">Hire from us</a>
+                        <ul>
+                            <li>
+                                <a href="#">Technical Training</a>
+                                <a href="#">Softskills Training</a>
+                                <a href="#">On Campus Drives</a>
+                            </li>  
+                        </ul>
+                    </li>
+                    <li><a href="#">HTD Model</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Branches</a>
+                <ul>
+                    <li><a href="">BTM Layout</a></li>
+                    <li><a href="">Mysore</a></li>
+                    <li><a href="">Nelamangala</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Placements</a>
+                <ul>
+                    <li><a href="">Ongoing-Interviews</a></li>
+                    <li><a href="">Recent-Placements</a></li>
+                </ul>
+            </li>
+            <div class="sign">
+                <a href="">Sign In</a>
+                I
+                <a href="">Sign Up</a>
+            </div>           
+        </ul>  
+    </nav>
+    <div class="content">
+        <h1>Not getting job?</h1>
+        <br><br>
+        <h2>Join us to get Interviews with <br> Internship and training till <br> you get the job</h2>
+        <br><br>
+        
+        <button id="enquiry" onclick="document.getElementById('id01').style.display='block'" >ENQUIRE NOW</button>
+    </div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="#" method="post">
+      
+      
+            <div class="rec-form">
+                <h2>We dont SPAM your details</h2> <br>
+                Full Name <input type="text" name="name" required>
+                Mobile Number <input type="tel" name="number" required>
+                Email <input type="email" name="email" required>
+                Highest Degree <input type="text" name="degree" required>
+                Course Interested <input type="text" name="course" required> <br><br>
+                <button type="submit">Submit</button> 
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+            </div>
+        </form>
+    </div> 
+    <a class="whatsapp" href="https://wa.me/+917022928198?text=" target="_blank"> <img src="{% static 'image/whatsapp.png'%}" alt="" height="60px" ></a>
+</body>
+</html>
